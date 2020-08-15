@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <style>
+        .box {
+            background-image: url(./images/background.jpg);
+            border-top: 3px solid orange;
+            border-radius: 8px;
+            font-family: "Human BBY", Times New Roman, serif;
+            font-size: 18px;
+            font-style: italic;
+            font-weight: 400;
+            color: initial;
+        }
+    </style>
+</head>
+
+<body>
+    
+
+    <div class="container">
+        
+        <div class="shadow box mt-5 p-5">
+            <a class="menulink" href="index.html"  onclick="setupPage()">Home</a>
+            <h2 class="text-center">Contact Form</h2>
+            <form  action="https://formspree.io/xeqrddna"
+            method="POST"
+          >
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Name</label>
+                    <input name="name" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Email address</label>
+                    <input name="email" type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="sherlocked@gmail.com">
+                </div>
+
+                <!-- address -->
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Address</label>
+                    <textarea name="address" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="B. Baker Street"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">City</label>
+                    <input name="city" class="form-control" list="browsers" name="browser" id="browser" placeholder="Toronto"
+                        autocomplete="off">
+                    <datalist id="browsers">
+                        <option value="Toronto">
+                        <option value="Vancouver">
+                        <option value="Ottawa">
+                        <option value="Montreal">
+                        <option value="Calgary">
+                        <option value="Alberta"></option>
+                    </datalist>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Postal Code</label>
+                    <input name="p-code" type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1" onclick="hideOrderFiled()">
+                        <label class="form-check-label" for="inlineRadio1"> Question </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2" onclick="hideOrderFiled()">
+                        <label class="form-check-label" for="inlineRadio2">Comment</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                            value="option2" onclick="showOrderField()">
+                        <label class="form-check-label" for="inlineRadio3">Order Problem</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <input name="order-number" id="order-number" style="display: none;" type="text" class="form-control w-25" placeholder="Order Number">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Enter your message</label>
+                    <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <input name="myname" type="hidden" class="form-control" value="YOUR_NAME">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
+        integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
+        crossorigin="anonymous"></script>
+</body>
+
+<script src="script.js"> </script>
+
+</html>

@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>The Watch Gallery</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/edcc9dc6ef.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="topnav-container">
+      <div class="topnav">
+        <div class="navcontainer">
+          <div class="logoContainer">
+            <img src="./images/logo21.png" class="logo-img" alt="Logo" />
+          </div>
+          <div class="menucontainer">
+            <ul>
+              <li>
+                <a class="menulink" href="#home" onclick="setupPage()">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a class="menulink"  href="contact.html" onclick="setupPage()">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="search-section">
+            <form action="https://formspree.io/mqkajddy" method="POST">
+              <input
+                type="text"
+                class="mr-2"
+                placeholder="Search your wish...."
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id="product-topnav-section-div" class="product-topnav-section">
+        <div
+          id="speakers-topnav"
+          class="products-nav-img-div"
+          onclick="selectProductMenu('subType', 'regular');"
+        >
+          <div class="product-image">
+            <img src="./images/analog.jpg" alt="" />
+          </div>
+          <div class="topnav-label">
+            <label>Analog Watches</label>
+          </div>
+        </div>
+        <div
+          id="smart-topnav"
+          class="products-nav-img-div"
+          onclick="selectProductMenu('subType', 'smart');"
+        >
+          <div class="product-image">
+            <img src="./images/smartwatch.jpg" alt="" />
+          </div>
+          <div class="topnav-label">
+            <label>Smart Watches</label>
+          </div>
+        </div>
+        <div
+          id="headphones-topnav"
+          class="products-nav-img-div"
+          onclick="selectProductMenu('type', 'headphones');"
+        >
+          <div class="product-image">
+            <img src="./images/smartband.jpg" alt="" />
+          </div>
+          <div class="topnav-label">
+            <label>Smart Bands</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner-section"></div>
+
+    <div class="content-section">
+      <div id="categorySection" class="category-section"></div>
+      <div id="products" class="product-section"></div>
+    </div>
+
+    
+
+    <div class="footer-section">
+      <div class="sm-icons-section">
+        <ul>
+          <li><i class="fab fa-facebook-f"></i></li>
+          <li><i class="fab fa-twitter"></i></li>
+          <li><i class="fab fa-instagram"></i></li>
+          <li><i class="fab fa-snapchat"></i></li>
+          
+        </ul>
+      </div>
+
+      <div class="subscribe-container">
+        <form action="https://formspree.io/xeqrddna" method="POST">
+          <input type="email" name="_replyto" placeholder="Enter email address"/>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+    </div>
+    <script src="watch.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
